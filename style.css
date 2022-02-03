@@ -1,0 +1,303 @@
+
+body {
+    background-color: #F2F2F2;
+    overflow-x:hidden;
+}
+
+.container {
+    margin-top:90px;
+}
+.navbar {
+   height:75px;
+   background:#000000;
+
+}
+
+.navbar-nav {
+    text-align: center;
+    font: normal normal bold 22px/29px Roboto;
+    color: #FFFFFF;
+}
+
+.logo {
+    background: transparent 0% 0% no-repeat padding-box;
+    top: 19px;
+    left: 374px;
+    width: 99px;
+    height: 37px;
+}
+
+.slogan-1 {
+    text-align: left;
+    font: normal normal bold 66px/88px Playfair Display;
+    color: #CD499C;
+}
+
+.slogan-2 {
+    text-align: left;
+    font: normal normal normal 51px/68px Playfair Display;
+    color: #000000;
+}
+
+.box-discover {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 38px #00000029;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 114px;
+    padding: 0 44px;
+}
+
+.pinkButton {
+    background: transparent linear-gradient(90deg, #B74F8E 0%, #88235F 100%) 0% 0% no-repeat padding-box;
+    border-radius: 32px;
+    border:none;
+    text-align: center;
+    font: normal normal bold 29px/38px Roboto;
+    color: #FFFFFF;
+    width: 246px;
+    height: 63px;
+}
+
+.boldText {
+    text-align: left;
+    font: normal normal bold 29px/38px Roboto;
+    color: #000000;
+    margin: 15px 0;
+}
+
+.item-container {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    height:300px;
+    margin: 50px 0px;
+}
+
+.item-container img {
+    width:20%;
+}
+
+.promotion-item {
+    margin-left: 20%;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.promotion-item:hover {
+    transform: scale(1.1);
+}
+
+.promotion-item .round {
+    border-radius:50%;
+    background: #42F577 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 42px #00000029;
+    width: 207px;
+    height: 207px;
+    position: absolute;
+    top:50px;
+    right:20px;
+}
+
+.round .oldPrice {
+    text-align: center;
+    text-decoration: line-through;
+    font: normal normal bold 36px/48px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-top:26px;
+}
+
+.round .promoPrice {
+    text-align: center;
+    font: normal normal bold 89px/67px Roboto;
+    letter-spacing: 0px;
+    color: #CD499C;
+    transition: all .2s ease-in-out;
+}
+
+.round .promoPrice:hover {
+   transform: scale(1.3);
+}
+div.work-steps {
+    margin-top: 50px;
+    display:flex;
+}
+
+div.work-steps img {
+    width:40px;
+    margin:0 10px;
+    height:fit-content;
+}
+
+.signUpForm {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 38px #00000029;
+    border-radius: 30px;
+    padding:43px 72px 43px 43px;
+    margin: 40px 3px 3px;
+}
+
+.signUpForm input {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    height:55px;
+}
+
+.submit {
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.logo-center {
+    padding:5%;
+    align-items: center;
+}
+
+.footer {
+    margin-top:65px;
+    background:#000000;
+}
+
+.nav-link {
+    color:white;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #CD499C;
+}
+
+.navbar-brand .nav-link:hover{
+    color: #CD499C;
+}
+
+.item-container img {
+    transition: all .2s ease-in-out;
+}
+
+.item-container img:hover{
+    transform: scale(1.1);
+}
+
+input[type='checkbox'] {
+    position: relative;
+    height: 0;
+}
+
+input[type='checkbox']:after {
+    content: "";
+    border: 1px solid #707070;
+    background: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+input[type='checkbox']:checked:after {
+    content: "";
+    border: 1px solid rgb(183 79 142);
+    background: rgb(183 79 142);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.greyText {
+    font: normal normal normal 20px/27px Segoe UI;
+    color: #707070;
+    padding: 5px 0 0 30px;
+    width: calc(100% - 30px);
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: rgb(183 79 142 / 25%);
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem rgb(183 79 142 / 25%);
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 20px;
+    }
+
+    .round {
+        transform: scale(0.5);
+    }
+
+    .main-text {
+        padding: 0 15px;
+    }
+
+    img.promotion-item {
+        height: 50vh;
+    }
+
+    .slogan-1 {
+        font: normal normal bold 30px/38px Playfair Display;
+    }
+
+    .slogan-2 {
+        font: normal normal bold 28px/36px Playfair Display;
+    }
+
+    .item-container {
+        height: auto;
+        margin: 30px 0;
+        padding: 0 10px;
+    }
+
+    .item-container img {
+        max-height: 35vh;
+    }
+
+    .box-discover {
+        padding: 10px 20px;
+    }
+
+    .boldText {
+        line-height: 26px;
+        font-size: 22px;
+    }
+
+    .pinkButton {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .signUpForm {
+        padding: 20px;
+    }
+
+    .signUpForm input {
+        height: 40px;
+        border-radius: 0.5rem;
+    }
+
+    input[type='checkbox'] {
+        height: 0;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    .navbar-collapse {
+        background: black;
+        z-index: 1;
+        position: absolute;
+        top: 55px;
+    }
+}
+
+
+
